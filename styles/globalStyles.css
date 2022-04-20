@@ -1,0 +1,87 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:wght@400;500;700&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  'poppins', 'roboto', sans-serif;
+  /* font-family: Helvetica, sans-serif; */
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.authNav {
+  height: 70px;
+  display: flex;
+  backdrop-filter: blur(3px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  z-index: 5;
+  text-shadow: 1px 2px 3px gray;
+}
+
+.authNav div {
+  flex: 1;
+}
+
+.hamburger__bar {
+  display: flex;
+  font-weight: 500;
+  /* align-self: flex-start; */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hamburger__bar i {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.brand__logo {
+  height: 70%;
+  width: 50px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand__logo img {
+  height: 100%;
+  width: 50px;
+  margin: 5px;
+}
+
+.menu {
+  font-weight: 500;
+}
+
+.menu a {
+  color: white;
+  padding: 10px 10px;
+  transition: all .3s ease;
+  border-radius: 20px;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+.bordered__a {
+  border: solid 2px #95D1CC;
+  color: #95D1CC !important;
+  text-shadow: none;
+}
