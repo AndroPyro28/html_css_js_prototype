@@ -1,0 +1,91 @@
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    height: 500px;
+    background: rgb(255,242,223);
+    /* background: url("../assets/carouselBg.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner .dog {
+    width: 60%;
+    height:500px;
+    right: 50px;
+    position: absolute;
+}
+
+.banner .content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-120px);
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'league spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.content div {
+    margin-top: 20px;
+}
+
+.address_and__phone {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.address_and__phone div h3, .email h3 {
+    font-size: 15px;
+}
+
+.address_and__phone div p, .email p{
+    font-size: 13px;
+}
+
+.get_in__touch{
+    text-align: center;
+}
+.get_in__touch h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'league spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.get_in__touch p {
+    color: gray;
+}
+
+.get_in__touch button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: solid 1px rgb(117, 105, 76);
+    color: aliceblue;
+    background: rgb(223,197,138);
+    margin-top: 50px;
+}
+
+.our__location {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.our__location h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'league spartan', sans-serif;
+    text-transform: uppercase;
+}

@@ -7,22 +7,22 @@ let currentCarouselContent = 0;
     leftButton.addEventListener('click', () => {
         if( 0 < currentCarouselContent) {
         carouselWrapper.style.transform = `translateX(${--currentCarouselContent * -100}vw)`;
-        // clearInterval(sliderFunc);
+         clearInterval(sliderFunc);
         }
     })
     rightButton.addEventListener('click', () => {
         if(currentCarouselContent < carouselItems.length -1) {
         carouselWrapper.style.transform = `translateX(${++currentCarouselContent * -100}vw)`;
-        // clearInterval(sliderFunc);
+         clearInterval(sliderFunc);
         }
     })
-
     
-    // const sliderFunc = () => {
-    //     if(currentCarouselContent == carouselItems.length -1) return currentCarouselContent = -1;
-    //     carouselWrapper.style.transform = `translateX(${++currentCarouselContent * -100}vw)`;
-    // }
-
-    // setInterval(sliderFunc, 4000)
+    const sliderFunc = () => {
+        if(currentCarouselContent == carouselItems.length -1) return currentCarouselContent = -1;
+        carouselWrapper.style.transform = `translateX(${++currentCarouselContent * -100}vw)`;
+    }
     
+    // window.addEventListener('load', (event) => {
+    //     setInterval(sliderFunc, 4000)
+    //   });
 

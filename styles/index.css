@@ -110,11 +110,15 @@ body {
 
 .carousel__item__content h1 {
     font-size: 3em;
+    /* font-family: 'league spartan', sans-serif; */
+    color: rgb(65, 47, 16);
     /* font-family: 'Raleway', sans-serif; */
     /* font-weight: 1000; */
 }
 .carousel__item__content p {
     font-size: 1em;
+    color: rgb(114, 82, 28);
+
 }
 .carousel__item__content button {
     padding: 10px 20px;
@@ -154,7 +158,10 @@ body {
 } */
 
 .carousel__item {
-    background: url("../assets//carouselbg.jpg");
+    background: url("../assets//carouselbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .services__wrapper {
@@ -163,11 +170,12 @@ body {
     align-items: center;
     padding: 50px 10px;
     width: 100%;
-    background: url('../assets/dogbg2.png');
+    /* background: url('../assets/dogbg5.png'); */
+    background: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: gray;
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
@@ -176,6 +184,7 @@ body {
    margin-bottom: 50px;
    text-align: center;
    text-transform: uppercase;
+   color: rgb(255, 219, 168);
 }
 
 .services__container {
@@ -192,6 +201,10 @@ body {
 }
 
 .service__content {
+    background: rgb(255, 247, 236);
+    color: gray;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .service__content h2 {
@@ -213,6 +226,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: gray;
     justify-content: center;
 }
 
@@ -220,6 +234,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 30px;
+    color: rgb(255, 219, 168);
 }
 
 .doctors__container {
@@ -237,7 +252,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-bottom: solid 2px gray;
+    border-bottom: solid 2px rgb(238, 188, 118);
     transition: all .3s ease-in;
     border-radius: 10px;
     overflow: hidden;
@@ -250,7 +265,8 @@ body {
 }
 
 .doctors__content p {
-    color: gray;
+    color: rgb(252, 173, 62);
+
 }
 
 .doctors__content img {
