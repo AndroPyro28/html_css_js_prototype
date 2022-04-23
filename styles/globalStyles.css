@@ -1,5 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=League+Spartan:wght@100&family=PT+Serif&family=Poppins:wght@400;500;700&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=League+Spartan:wght@100&family=PT+Serif&family=Poppins:wght@400;500;700&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=K2D:wght@100&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=League+Spartan:wght@100&family=PT+Serif&family=Poppins:wght@400;500;700&family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +67,7 @@ a {
 }
 
 .brand__logo img {
-  height: 100%;
+  height: 50px;
   width: 50px;
   margin: 5px;
   cursor: pointer;
@@ -98,11 +102,12 @@ a {
 }
 
 .authNav {
-  height: 70px;
   display: flex;
   backdrop-filter: blur(3px);
-  /* justify-content: space-between; */
   background: white;
+  /* justify-content: space-between; */
+  /* border-bottom: solid 2px rgb(216, 216, 216); */
+  /* background: rgb(248, 241, 231); */
   align-items: center;
   position: fixed;
   top: 0px;
@@ -112,6 +117,7 @@ a {
   /* text-shadow: 1px 2px 3px gray; */
   flex-direction: column;
   /* background: black; */
+  
 }
 
 .top__navbar {
@@ -131,8 +137,7 @@ a {
 .top__navbar .brand__logo {
   display: flex;
   justify-content: flex-start;
-
-  color: black;transform: translateX(50px);
+  transform: translateX(50px);
   color: gray;
 
 }
@@ -146,7 +151,10 @@ a {
   flex:1;
   height: 100%;
   border-radius: 5px;
-  border: solid 2px gray;
+  border: solid 2px rgb(8, 8, 8);
+  font-size: 100%;
+  padding-left: 10px;
+  outline: none;
 }
 
 .top__navbar .search__bar__container button {
@@ -154,12 +162,19 @@ a {
   display: flex;
   align-items: center;
   font-size: 1em;
-  background: gray;
+  background: black;
   color: white;
   border: none;
   margin-left: 5px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
 }
+
+.top__navbar .search__bar__container button:hover {
+  color: black;
+  background: rgb(230, 230, 230);
+ }
 
 .top__navbar .info__and__cart {
   display: flex;
@@ -176,6 +191,28 @@ a {
   border: solid 2px black;
   border-radius: 10px;
   height: 30px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.info__and__cart button:hover {
+  background: black;
+  color: white;
+}
+
+.info__and__cart .cart__number__item {
+  padding: 0px 6px;
+  background: rgb(172, 172, 172);
+  color: white;
+  transition: all .3s ease-in-out;
+
+  border-radius: 50%;
+}
+
+.info__and__cart button:hover > .cart__number__item{
+  background: rgb(255, 255, 255);
+  color: rgb(2, 2, 2);
 }
 
 .info__and__cart .userProfile{
@@ -185,6 +222,13 @@ a {
   margin: 0 5px 0 5px;
 }
 
+.info__and__cart {
+  color: black;
+  text-overflow: 1px 3px 5px black;
+}
+
+
+
 .userProfile__container {
   align-self: center;
   overflow: hidden;
@@ -192,6 +236,7 @@ a {
   align-items: center;
   width: fit-content;
   margin: 0 20px 0 20px;
+  justify-content: center;
 } 
 
 .bot__navbar {
@@ -199,13 +244,12 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: white;
 }
 .bot__navbar a {
   padding: 10px 20px;
   margin: 5px;
   border-radius: 10px;
-  color: gray !important; 
+  color: black !important; 
 }
 
 @media(max-width: 750px) {

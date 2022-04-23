@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <script src="../JS/global.js" defer></script>
+    <script src="../JS/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/store.css">
+    <!-- <link rel="stylesheet" href="../styles/index.css"> -->
+    <script src="../JS/store.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+
+        <nav class="authNav" >
+            <section class="top__navbar" >
+
+                <div class="brand__logo">
+                    <img src="../assets/logo.png" class="logo" />
+                </div>
+
+                <div class="search__bar__container">
+                    <input type="text" placeholder="search..." class="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search</button>
+                </div>
+
+                <div class="info__and__cart"> 
+
+                    <div class="userProfile__container">
+                        <button> <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart &nbsp; <span class="cart__number__item">5</span></button>
+                        <img src="../assets/nicePicture.jpg" alt="" class="userProfile">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bot__navbar">
+                <a href="">Home</a>
+                <a href="#">Store</a>
+                <a href="">Live Streams</a>
+                <a href="">Appointment</a>
+            </section>
+        </nav>
+
+        <section class="banner">
+            <div class="content">
+                <h1>
+                    W e   &nbsp;  p r o v i d e  &nbsp;  w h a t &nbsp;  y o u  &nbsp;  n e e d &nbsp; f o r &nbsp; a f f o r d a b l e  &nbsp; p r i c e.
+                </h1>
+            </div>
+        </section>
+
+        <section class="pet__filter__wrapper">
+
+            <h1> W e &nbsp; D e a l &nbsp; I n</h1>
+            
+            <div class="pet__filter__container">
+
+                <div class="pet__container active__filter">
+                    <div class="circle__background"></div>
+                    <img src="../assets/dog7.png" />
+                    <h3>Dog</h3>
+                    <p>Healthy food for active woof</p>
+                </div>
+
+                <div class="pet__container">
+                    <div class="circle__background"></div>
+                    <img src="../assets/cat1.png" />
+                    <h3>Cat</h3>
+                    <p>Healthy food for active meow</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products__wrapper">
+            <h1>P r o d u c t s</h1>
+            <i class="fa-solid fa-chevron-left left"></i>
+            <i class="fa-solid fa-chevron-right right"></i>
+            <div class="products__container">
+                <!-- products here -->
+            </div>
+
+            <div class="pageNumber"> <span class="activePage"></span> / <span class="maxPage"></span> </div>
+        </section>
+    </main>
+</body>
+</html>

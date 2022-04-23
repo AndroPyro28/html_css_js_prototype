@@ -1,0 +1,218 @@
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url('../assets/storePicEdited2.png');
+    margin-top: 120px;
+    /* background: rgb(255,242,223); */
+
+    /* background-position: ; */
+    /* background-size: cover; */
+    position: relative;
+}
+
+.banner .content {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto auto auto auto;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 3px 5px black;
+}
+
+.content h1 {
+    font-family:  'league spartan', sans-serif;
+    text-transform: uppercase;
+    opacity: 0.7;
+
+}
+
+
+.pet__filter__wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 3px 0px 26px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 0px 26px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 0px 26px -10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    /* width: ; */
+    padding: 50px;
+}
+.pet__filter__wrapper h1{
+    margin: 50px;
+    color: rgb(141,124,87);
+    font-size: 30px;
+    font-family:  'league spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.pet__filter__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pet__filter__container .pet__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.active__filter {
+    box-shadow: 1px 3px 5px gray;
+
+}
+
+.pet__filter__container .pet__container:hover {
+    box-shadow: 1px 3px 5px gray;
+
+}
+
+.pet__container .circle__background {
+    border-radius: 50%;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background: lightgoldenrodyellow;
+}
+
+.pet__filter__container .pet__container h3{
+    z-index: 2;
+    color: rgb(141, 124, 87);
+    margin: 10px;
+}
+
+
+.pet__filter__container .pet__container img{
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    object-position: top;
+    object-fit: cover;
+    /* transform: scale(1.1); */
+}
+
+.pet__filter__container .pet__container p{
+    color: gray;
+    font-size: 100%;
+    z-index: 2;
+    /* transform: scale(1.1); */
+}
+
+.products__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.products__wrapper h1 {
+    margin: 50px;
+    color: rgb(141,124,87);
+    font-size: 30px;
+    font-family:  'league spartan', sans-serif;
+    text-transform: uppercase;   
+}
+
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 350px;
+    grid-gap: 20px;
+    position: relative;
+    padding: 20px;
+}
+
+.product__item {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.product__item img {
+    width: 200px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.product__item__name {
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+    margin: 5px;
+    text-transform: capitalize;
+}
+
+
+.product__item__price{
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+    margin: 5px;
+}
+
+.add__to__cart {
+    border-radius: 10px;
+    border: solid 1px black;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.add__to__cart:hover {
+
+    /* border-color: white; */
+    background: black;
+    color: white;
+}
+
+.left, .right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px ;
+    border-radius: 50%;
+    background: rgb(216, 216, 216);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    z-index: 5;
+}
+
+.left {
+    margin: auto auto auto 20px;
+}
+ .right {
+    margin: auto 20px auto auto;
+}
+
+:is(.left, .right):hover {
+    background: black;
+    color: white;
+}
