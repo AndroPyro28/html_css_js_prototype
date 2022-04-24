@@ -1,0 +1,145 @@
+.main {
+    display: flex;
+    height: 100vh;
+    color: white;
+    background: rgb(131, 118, 99);
+
+}
+
+.joined__users__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: auto;
+    background: rgb(37,34,27);
+
+}
+
+.backIcon__container {
+    margin-bottom:10px ;
+    width: 100%;
+    background: rgb(37,34,27);
+
+}
+
+.backIcon {
+    padding: 10px 10px;
+    font-size: 20px;
+    /* background: rgb(32, 32, 19); */
+}
+
+.joined__users__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+
+}
+
+.joined__users__header {
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.joined__users__body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(131, 118, 99);
+
+    overflow: auto;
+}
+
+.number__of__joined__users {
+    background: rgb(211, 211, 208);
+    color: rgb(15, 15, 15);
+    text-align: center;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.joined__user {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(255, 253, 253);
+}
+
+:is(.userName, .userProfile) {
+    margin: 10px;
+}
+
+.joined__user .userProfile {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.liveStream__video__container {
+    flex: 3;
+    background: url('../assets/petHaircutVidSample.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.chat__container {
+    flex: 1.5;
+    position: relative;
+}
+
+.chat__header {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(37, 34, 27);
+}
+
+.chat__body {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    overflow: auto;
+}
+
+.chat__item {
+    display: flex;
+    padding: 10px;
+}
+
+.chat__item img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.chat__item span {
+    padding: 10px;
+    background: rgb(59, 57, 34);
+    border-radius: 20px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.chat__input {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.chat__input input {
+    flex: 0.9;
+    padding: 10px 20px 10px 10px;
+    outline: none;
+}
+
+.chat__input i {
+    flex: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(39, 30, 6);
+}

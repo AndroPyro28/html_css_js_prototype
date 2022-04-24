@@ -66,7 +66,7 @@ const addProduct = (data) => {
   productItemName.classList.add("product__item__name");
 
   const productItemPrice = document.createElement("h4");
-  productItemPrice.textContent = data.price;
+  productItemPrice.textContent = `₱ ${data.price}`;
   productItemPrice.classList.add("product__item__price");
 
   const cartIcon = document.createElement("i");
