@@ -1,0 +1,117 @@
+.appointment__form__container {
+    /* height: 90vh; */
+    width:80%;
+    margin-top: 175px !important;
+    margin-bottom: 55px !important;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(245,244,249);
+    /* background: ; */
+    background: white;
+    box-shadow: -2px -1px 31px -8px rgba(66,66,66,0.75);
+    -webkit-box-shadow: -2px -1px 31px -8px rgba(66,66,66,0.75);
+    -moz-box-shadow: -2px -1px 31px -8px rgba(66,66,66,0.75);
+}
+
+body {
+    background: rgb(245,244,249);
+    
+}
+
+.main {
+    /* background: rgb(245,244,249); */
+}
+
+.appointment__form__container .appointment__form__photo{
+    background: url('../assets/dogpic.jpg');
+    flex:3;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.appointment__form__container .appointment__form__inputs__container {
+    flex:5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 50px; */
+    padding: 50px 20px;
+}
+
+.appointment__form__inputs__container :is(h2, p) {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'league spartan';
+}
+
+.appointment__form__inputs__container h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.appointment__form__inputs__container p {
+    margin-bottom: 50px;
+}
+
+/* .appointment__form__inputs {
+    height: 95%;
+    width: 95%;
+    background: black;
+    border-radius: 20px;
+} */
+
+.form__inputs__container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.form__inputs__container .input__container {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messageRequest {
+    padding:10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    resize: none;
+}
+
+.form__inputs__container .input__container .input {
+    padding: 10px;
+    border: solid 2px #EAEAEA;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form__inputs__container .input__container .input:focus {
+    border-color: gray;
+}
+
+
+
+.form__inputs__container .button {
+    padding: 10px 20px;
+    background: rgb(235, 235, 129);
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form__inputs__container .button:hover {
+    background: #312f15;
+    color: white;
+}

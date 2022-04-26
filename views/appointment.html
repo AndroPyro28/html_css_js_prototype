@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/appointment.css" />
+
+    <script src="../JS/index.js" defer></script>
+    <script src="../JS/global.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="authNav">
+        <section class="top__navbar">
+          <div class="brand__logo">
+            <img src="../assets/logo.png" class="logo" />
+          </div>
+
+          <div class="search__bar__container">
+            <input type="text" placeholder="search..." class="search" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search
+            </button>
+          </div>
+
+          <div class="info__and__cart">
+            <div class="userProfile__container">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart &nbsp;
+                <span class="cart__number__item">5</span>
+              </button>
+              <img src="../assets/nicePicture.jpg" alt="" class="userProfile" />
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="bot__navbar">
+          <a href="">Home</a>
+          <a href="#">Store</a>
+          <a href="">Live Streams</a>
+          <a href="">Appointment</a>
+        </section>
+      </nav>
+
+      <section class="appointment__form__container">
+        <section class="appointment__form__photo"></section>
+        <section class="appointment__form__inputs__container">
+          <h2>B o o k &nbsp; A n &nbsp; A p p o i n t m e n t &nbsp; O n l i n e!</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            doloremque obcaecati maxime voluptatem vero quasi voluptatum alias.
+            Quasi, dolor placeat!
+          </p>
+
+          <div class="form__inputs__container">
+
+              <div class="input__container">
+                  <label for="petName">Pet Name</label>
+                  <input type="text" name="" id="petName" class="input" placeholder="name of your pet">
+            </div>
+
+              <div class="input__container">
+                  <label for="petType">Pet Type</label>
+                  <select name="" id="petType" class="input">
+                      <option value="">Dog</option>
+                      <option value="">Cat</option>
+                  </select>
+                </div>
+          </div>
+
+          <div class="form__inputs__container">
+
+            <div class="input__container">
+                <label for="petBreed">Pet Breed</label>
+                <input type="text" id="petBreed" class="input" placeholder="Breed of your pet">
+          </div>
+
+            <div class="input__container">
+                <label for="requestType">Request type</label>
+                <select name="" id="requestType" class="input">
+                    <option value="">Grooming</option>
+                    <option value="">Walk-n consulting</option>
+                </select>
+              </div>
+        </div>
+
+          <div class="form__inputs__container">
+
+            <div class="input__container">
+                <label for="preferedDate">Prefered Date</label>
+                <input type="date" name="" id="preferedDate" class="input" placeholder="Your Prefered Data...">
+          </div>
+
+            <div class="input__container">
+                <label for="preferedTime">Prefered Time</label>
+                <select name="" id="preferedTime" class="input">
+                    <option value="">01:00 pm</option>
+                    <option value="">02:00 pm</option>
+                    <option value="">03:00 pm</option>
+                    <option value="">04:00 pm</option>
+                    <option value="">05:00 pm</option>
+                    <option value="">06:00 pm</option>
+                </select>
+              </div>
+        </div>
+
+        <div class="form__inputs__container">
+
+        <div class="input__container">
+            <label for="">Additional Request</label>
+            <textarea name="" id="" class="messageRequest input" placeholder="Your additional message..."></textarea>
+        </div>
+        </div>
+
+        <div class="form__inputs__container">
+            <div class="button">Submit <i class="fa-solid fa-envelope-circle-check"></i></div>
+        </div>
+
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
