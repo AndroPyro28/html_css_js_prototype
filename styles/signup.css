@@ -1,0 +1,8 @@
+.login__signup__container .form__background {
+    flex: 2;
+    background: url('../assets/signupBG.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: black; */
+}
