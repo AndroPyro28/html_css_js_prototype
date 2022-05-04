@@ -129,10 +129,6 @@ body {
     font-weight: 900;
 }
 
-.product__quantity .decremeant {
-    
-}
-
 .product__quantity .incremeant {
     color: rgb(92, 250, 113) !important;
 }
@@ -238,6 +234,7 @@ body {
     color: white;
     font-weight: 500;
 }
+
 .card__input .input {
     width: 90%;
     padding: 10px;
