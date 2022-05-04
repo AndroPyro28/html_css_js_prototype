@@ -1,0 +1,301 @@
+body {
+    background: rgb(230,233,234);
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.payment__section__wrapper {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    border-radius: 20px;
+    background: white;
+    flex-direction: column;
+    padding: 20px 40px 40px 40px;
+}
+
+.payment__section__wrapper h3 {
+    color: rgb(133, 133, 133);
+    margin: 3px;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 3px 7px 3px 7px;
+    width: fit-content;
+    background: rgb(221, 221, 221);
+    transform: translate(-30px, -10px);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.payment__section__wrapper h3:hover {
+    color: white;
+    background: rgb(153, 153, 153);
+}
+
+.payment__section__container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.shopping__cart__container {
+    display: flex;
+    flex-direction: column;
+    height: 103%;
+    flex: 2;
+    transform: translateY(-10px);
+    /* width: 80% !important; */
+
+}
+
+.shopping__cart__container h2 {
+    margin: 5px;
+    color: rgb(92, 92, 92);
+}
+
+.shopping__cart__details {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: gray;
+}
+
+.product__list__container {
+    height: 80%;
+    background: rgb(230,233,234);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: auto;
+    box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+.product__item__container {
+    display: flex;
+    width: 90%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    max-height: 90px;
+}
+
+.product__image {
+    width: 80px;
+    height: 100%;
+}
+
+.product__name {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 2;
+}
+
+.product__name h5 {
+    font-size: 1em;
+    color: rgb(59, 59, 59);
+}
+.product__name h6 {
+    font-size: 0.7em;
+    color: gray;
+}
+
+.product__quantity {
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+
+.product__quantity button {
+    height: fit-content;
+    margin: 5px;
+    border: none;
+    color: gray;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.product__quantity .decremeant {
+    
+}
+
+.product__quantity .incremeant {
+    color: rgb(92, 250, 113) !important;
+}
+
+.product__quantity label {
+    color: rgb(87, 86, 86);
+}
+
+.product__price {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-family: 'league spartan', sans-serif;
+}
+
+.addToShop {
+    align-self: center;
+    padding: 5px;
+    background: rgb(212, 212, 212);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.productShopAdded {
+    color: rgb(89, 180, 89) !important;
+    background: rgb(255, 255, 255);
+    /* background: rgb(4, 180, 4);
+    color: rgb(255, 255, 255); */
+
+}
+.card__details__container {
+    flex: 1;
+    background: rgb(120, 155, 160);
+    background: rgb(86,92,186);
+    width: 100%;
+    height: 115%;
+    transform: translateY(-70px); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card__details__container h2 {
+    color: white;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+.card__type__container {
+    margin: 5px;
+}
+
+.card__type__container h4 {
+    color: white;
+    font-size: .7em;
+    
+}
+
+.card__type {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 2px rgb(146, 146, 146);
+    cursor: pointer;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: white;
+}
+
+.card.activeCardPayment {
+    border-color: white;
+}
+
+.card img {
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card__input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.card__input label {
+    font-size: .7em;
+    color: white;
+    font-weight: 500;
+}
+.card__input .input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.card__input__container {
+    display: flex;
+    align-items: center; 
+    width: 90%;
+}
+
+.card__input__container .card__input {
+    display: flex;
+    align-items: center;
+    /* background: black; */
+
+}
+
+.card__input__container .card__input .input {
+    width:85%;
+}
+
+.checkout__details__container {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    color: white;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.checkout__details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.check__out__button {
+    width: 90%;
+    padding: 13px;
+    border-radius: 10px;
+    background: rgb(67, 189, 245);
+    border: none;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.check__out__button:hover {
+    background: black;
+    color: white;
+}

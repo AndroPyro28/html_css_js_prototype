@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/payment.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <script src="../JS/index.js" defer></script>
+    <script src="../JS/global.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+
+        <!-- <nav class="authNav">
+            <section class="top__navbar">
+              <div class="brand__logo">
+                <img src="../assets/logo.png" class="logo" />
+              </div>
+    
+              <div class="search__bar__container">
+                <input type="text" placeholder="search..." class="search" />
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search
+                </button>
+              </div>
+    
+              <div class="info__and__cart">
+                <div class="userProfile__container">
+                  <button>
+                    <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart &nbsp;
+                    <span class="cart__number__item">5</span>
+                  </button>
+                  <img src="../assets/nicePicture.jpg" alt="" class="userProfile" />
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </section>
+    
+            <section class="bot__navbar">
+              <a href="">Home</a>
+              <a href="#">Store</a>
+              <a href="">Live Streams</a>
+              <a href="">Appointment</a>
+            </section>
+          </nav> -->
+
+          <section class="payment__section__wrapper">
+            <h3><i class="fa-solid fa-arrow-left"></i></h3>
+            
+            <section class="payment__section__container">
+
+                <div class="shopping__cart__container">
+                  <h2><i class="fa-solid fa-cart-shopping"></i> &nbsp; Your Shopping Cart</h2>
+                  
+                  <span class="shopping__cart__details">
+                    <small>You have 4 items in your cart</small>
+                    <small>*Only Basket What you gonna buy*</small>
+                  </span>
+
+                    <div class="product__list__container">
+
+                      <div class="product__item__container">
+                        <img src="../assets/pedigree.png" class="product__image" />
+
+                        <div class="product__name">
+                          <h5>Pedigree</h5>
+                          <h6>Good quality Dog Food</h6>
+                        </div>
+
+                        <div class="product__quantity">
+                          <button class="decremeant">-</button>
+                          <label>4</label>
+                          <button class="incremeant">+</button>
+
+                        </div>
+
+                        <h5 class="product__price">₱800.00</h5>
+
+                        <i class="fa-solid fa-basket-shopping addToShop productShopAdded"></i>
+                      </div>
+
+                      <div class="product__item__container">
+                        <img src="../assets/puppy-food2.png" class="product__image" />
+
+                        <div class="product__name">
+                          <h5>Poppy Glow</h5>
+                          <h6>Good quality Dog Food</h6>
+                        </div>
+
+                        <div class="product__quantity">
+                          <button class="decremeant">-</button>
+                          <label>5</label>
+                          <button class="incremeant">+</button>
+
+                        </div>
+
+                        <h5 class="product__price">₱600.00</h5>
+
+                        <i class="fa-solid fa-basket-shopping addToShop productShopAdded"></i>
+                      </div>
+
+                      <div class="product__item__container">
+                        <img src="../assets/waggFoodSet.jpg" class="product__image" />
+
+                        <div class="product__name">
+                          <h5>Wagg Food Set</h5>
+                          <h6>Full package dog food for your dog need</h6>
+                        </div>
+
+                        <div class="product__quantity">
+                          <button class="decremeant">-</button>
+                          <label>4</label>
+                          <button class="incremeant">+</button>
+
+                        </div>
+
+                        <h5 class="product__price">₱1500.00</h5>
+
+                        <i class="fa-solid fa-basket-shopping addToShop"></i>
+                      </div>
+                      
+                      <div class="product__item__container">
+                        <img src="../assets/waggFoodSet.jpg" class="product__image" />
+
+                        <div class="product__name">
+                          <h5>Wagg Food Set</h5>
+                          <h6>Full package dog food for your dog need</h6>
+                        </div>
+
+                        <div class="product__quantity">
+                          <button class="decremeant">-</button>
+                          <label>4</label>
+                          <button class="incremeant">+</button>
+
+                        </div>
+
+                        <h5 class="product__price">₱1500.00</h5>
+
+                        <i class="fa-solid fa-basket-shopping addToShop"></i>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="card__details__container">
+
+                  <h2>Card Details</h2>
+
+                  <div class="card__type__container">
+                  <h4>Cart Type</h4>
+
+                    <div class="card__type">
+                      <div class="card activeCardPayment"><img src="../assets/imgbin_mastercard-png.png" /></div>
+                      <div class="card"><img src="../assets/imgbin_visa-png.png" /></div>
+                      <div class="card"><img src="../assets/imgbin_paypal-png.png" /></div>
+                    </div>
+                  </div>
+
+                  <div class="card__input">
+                    <label for="">Name on Card</label>
+                    <input type="text" class="input" placeholder="(e.g John Doe)" />
+                  </div>
+
+                  <div class="card__input">
+                    <label for="">Card Number</label>
+                    <input type="number" min="1" class="input" placeholder="(e.g 1111 2222 3333 4444)"/>
+                  </div>
+
+
+                  <div class="card__input">
+                    <label for="">CVV</label>
+                    <input type="number" min="1" class="input" placeholder="(e.g 123)" />
+                  </div>
+
+                  <div class="card__input__container">
+
+                    <div class="card__input">
+                      <label for="">Expiration MM</label>
+                      <Select class="input" aria-placeholder="Month">
+                        <option value="">(e.g Month)</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                        <option value="">05</option>
+                        <option value="">06</option>
+                        <option value="">07</option>
+                        <option value="">08</option>
+                        <option value="">09</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                      </Select>
+                    </div>
+
+                    <div class="card__input">
+                      <label for="">Expiration YYYY</label>
+                      <Select class="input"  >
+                        <option value="">(e.g Year)</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                        <option value="">2026</option>
+                        <option value="">2027</option>
+                        <option value="">2028</option>
+                        <option value="">2029</option>
+                        <option value="">2030</option>
+                      </Select>
+                    </div>
+                  </div>
+
+                  <div class="checkout__details__container">
+
+                    <div class="checkout__details">
+                      <span class="leftDetails">Subtotal</span>
+                      <span class="rightDetails">₱1400.00</span>
+                    </div>
+
+                    <div class="checkout__details">
+                      <span class="leftDetails">Shipping</span>
+                      <span class="rightDetails">₱100.00</span>
+                    </div>
+
+                    <div class="checkout__details">
+                      <span class="leftDetails">Total</span>
+                      <span class="rightDetails">₱1500.00</span>
+                    </div>
+                    
+                  </div>
+
+                  <button class="check__out__button">
+                    <span class="check__out__price">₱1500.00</span>
+                    <span class="check__out__proceed">Checkout <i class="fa-solid fa-arrow-right"></i></span>
+                  </button>
+                </div>
+
+            </section>
+          </section>
+
+
+    </main>    
+</body>
+</html>
