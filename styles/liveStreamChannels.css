@@ -161,10 +161,16 @@ body {
     /* height: 100%; */
     width: 100%;
     padding: 5px;
+    cursor: pointer;
     /* background: rgb(24,24,27); */
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.37);
     position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.other__liveStream:hover {
+    background: rgb(92, 69, 1);
 }
 
 .liveStream__tag, .liveStream__viewers {
@@ -199,6 +205,10 @@ body {
 .other__liveStream__info .ownerName {
     margin-left: 10px;
     color: white;
+}
+
+.ownerName small {
+    color: rgb(235, 235, 235);
 }
 
 .ownerProfile {
