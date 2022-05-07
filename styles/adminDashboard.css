@@ -1,0 +1,174 @@
+.main, body {
+    overflow-x: hidden;
+}
+
+.chart__container {
+    border-radius: 20px;
+}
+
+.chart__container:nth-child(1){
+    width: 45%;
+}
+
+.chart__container:nth-child(2){
+    width: 39%;
+    align-self: flex-end;
+    height: 350px;
+    display: flex;
+    align-items: center;
+ }
+
+.chart__container {
+    background: white;
+    padding: 20px;
+}
+
+
+
+.charts__container {
+    transform: translateX(100px);
+    display: flex;
+    border: solid 1px rgb(194, 194, 194);
+    align-items: center;
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: none;
+    border-right: none;
+    margin-top: 50px;
+}
+
+.appointment__list__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.appointment__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment__header h3 {
+    margin: 10px 20px;
+    font-size: 1.5em;
+    /* font-family: 'league spartan', sans-serif;
+    text-transform: uppercase; */
+}
+
+.appointment__header select {
+    padding: 5px 10px !important;
+    border-radius: 10px;
+    font-size: 0.8em;
+    outline: none;
+    border: none;
+    margin-right: 50px;
+    height: auto;
+}
+
+.appointment__data {
+    display: flex;
+    transition: all .3s ease-in-out;
+}
+
+.appointment__data div {
+    color: rgb(66, 65, 65);
+    margin: 20px;
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+}
+
+.appointment__data .header__ownerName {
+    flex: 2;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.appointment__data .header__petName {
+    flex: 2;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.data__ownerName img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.appointment__data :is(
+.header__date, 
+.header__time, 
+.header__action,
+.header__petType,
+.header__petBreed) {
+    flex: 1;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.appointment__data .data__ownerName {
+    flex: 2;
+    font-size: .9em;
+}
+
+.appointment__data .data__petName {
+    flex: 2;
+    font-size: .9em;
+}
+
+.appointment__data :is(
+.data__action,
+.data__time,
+.data__date,
+.data__petType,
+.data__petBreed) {
+    flex: 1;
+    font-size: .9em;
+}
+
+.data__action {
+    display: flex;
+    
+}
+
+.data__action i {
+    transition: all .3s ease-in-out;
+    padding: 5px 5px;
+    border: solid 1px;
+    border-radius: 20%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.data__action .accept {
+    color: rgb(24, 245, 153);
+}
+
+.data__action .accept:hover {
+    background: rgb(24, 245, 153);
+    color: white;
+}
+
+.data__action .reject {
+    color: rgb(255, 75, 51);
+}
+
+.data__action .reject:hover {
+    background: rgb(255, 75, 51);
+    color: white;
+}
+
+.data__table {
+    cursor: pointer;
+}
+
+.data__table:hover {
+    background: #EAEAEA;
+}
+
+/* .data__table:nth-child(odd) {
+
+} */

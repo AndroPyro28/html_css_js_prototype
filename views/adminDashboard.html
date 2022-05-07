@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <script src="../JS/adminDashboard.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/adminDashboard.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+
+        <nav class="side__nav__wrapper ">
+
+            <section class="side__nav__container close">
+            <div class="title">
+                <h1 class="elements"> <i class="fa-solid fa-user-shield"></i> Andro Eugenio</h1>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+
+            <a class="elements activePage" >
+                <i class="fa-solid fa-chart-line"></i> &nbsp; Dashboard
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-calendar-days"></i> &nbsp; Appointment
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-truck-fast"></i> &nbsp; To-Ship
+            </a>
+            <a class="elements">
+                <i class="fa-solid fa-cart-flatbed"></i> &nbsp; Inventory
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout
+            </a>
+            </section>
+            
+        </nav>
+
+            <section class="charts__container">
+                <section class="chart__container">
+                    <canvas id="visitsChart"></canvas>
+                </section>
+    
+                <section class="chart__container">
+                    <canvas id="salesCharts"></canvas>
+                </section>
+            </section>
+
+            <section class="appointment__list__container">
+                <div class="appointment__header">
+                    <h3>Appointment</h3>
+                    <select>
+                       <option value="">Latest Appointment</option>
+                       <option value="">Oldest Appointment</option>
+                    </select>
+                </div>
+
+                <div class="appointment__data header__table">
+                    <div class="header__ownerName">Owner Name</div>
+                    <div class="header__petName">Pet Name</div>
+                    <div class="header__petType">Pet Type</div>
+                    <div class="header__petBreed">Pet Breed</div>
+                    <div class="header__date">Date</div>
+                    <div class="header__time">Time</div>
+                    <div class="header__action">Action</div>
+                </div>
+
+                <div class="appointment__data data__table">
+                    <div class="data__ownerName"> <img src="../assets/nicePicture.jpg" alt=""> Andro Eugenio</div>
+                    <div class="data__petName">Jean Correa</div>
+                    <div class="data__petType">Dog</div>
+                    <div class="data__petBreed">Husky</div>
+                    <div class="data__date">5/10/22</div>
+                    <div class="data__time">10:00 AM</div>
+                    <div class="data__action">
+                        <i class="fa-solid fa-check accept"></i>
+                        <i class="fa-solid fa-xmark reject"></i>
+                    </div>
+                </div>
+
+                <div class="appointment__data data__table">
+                    <div class="data__ownerName"> <img src="../assets/nicePicture.jpg" alt=""> Andro Eugenio</div>
+                    <div class="data__petName">Jean Correa</div>
+                    <div class="data__petType">Dog</div>
+                    <div class="data__petBreed">Husky</div>
+                    <div class="data__date">5/10/22</div>
+                    <div class="data__time">10:00 AM</div>
+                    <div class="data__action">
+                        <i class="fa-solid fa-check accept"></i>
+                        <i class="fa-solid fa-xmark reject"></i>
+                    </div>
+                </div>
+
+                <div class="appointment__data data__table">
+                    <div class="data__ownerName"> <img src="../assets/nicePicture.jpg" alt=""> Andro Eugenio</div>
+                    <div class="data__petName">Jean Correa</div>
+                    <div class="data__petType">Dog</div>
+                    <div class="data__petBreed">Husky</div>
+                    <div class="data__date">5/10/22</div>
+                    <div class="data__time">10:00 AM</div>
+                    <div class="data__action">
+                        <i class="fa-solid fa-check accept"></i>
+                        <i class="fa-solid fa-xmark reject"></i>
+                    </div>
+                </div>
+
+                <div class="appointment__data data__table">
+                    <div class="data__ownerName"> <img src="../assets/nicePicture.jpg" alt=""> Andro Eugenio</div>
+                    <div class="data__petName">Jean Correa</div>
+                    <div class="data__petType">Dog</div>
+                    <div class="data__petBreed">Husky</div>
+                    <div class="data__date">5/10/22</div>
+                    <div class="data__time">10:00 AM</div>
+                    <div class="data__action">
+                        <i class="fa-solid fa-check accept"></i>
+                        <i class="fa-solid fa-xmark reject"></i>
+                    </div>
+                </div>
+                
+            </section>
+        
+    </main>
+</body>
+</html>
