@@ -1,0 +1,173 @@
+body {
+    background: rgb(43, 42, 42) !important;
+}
+
+.order__number {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: solid 1px lightgray;
+    border-left: none;
+    border-right: none;
+}
+
+.order__number,
+.order__details__container {
+    background: rgb(255, 255, 255) !important;
+}
+
+.order__number h3 {
+    color: rgb(50,63,75);
+    font-family: 'poppins', sans-serif;
+}
+
+.order__number h3 > span{
+    color: rgb(107,153,255);
+}
+
+.order__number small {
+    color: gray;
+    font-size: 0.7em;
+}
+
+.order__details__container {
+    color: rgb(50,63,75);
+    display: flex;
+}
+
+.order__status__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: solid 1px lightgray;
+    margin: 20px 20px 20px 10px;
+    border-radius: 10px;
+
+}
+
+.ordered__items__container {
+    border: solid 1px lightgray;
+    min-height: 35rem;
+    border-radius: 10px;
+    margin: 20px 10px 20px 20px;
+    flex: 2.5;
+    
+}
+
+.ordered__items__header {
+    border-bottom: solid 1px lightgray;
+    /* width: 95.5%; */
+    padding: 10px 20px;
+    color: rgb(50,63,75);
+    margin-bottom: 30px;
+}
+
+.ordered__items__header h3 > small {
+    font-size: .7em;
+    color: gray;
+    font-weight: 100;
+}
+
+.ordered__products {
+    display: flex;
+    flex-direction: column;
+}
+
+.ordered__product {
+    display: flex;
+    align-items: center;
+}
+
+.ordered__product .product__image {
+    width: 90px;
+    max-height: 90px;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ordered__product .product__name{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.ordered__product div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product__name .detail1 {
+    font-weight: 600;
+    font-size: 0.9em;
+    margin: 3px;
+}
+
+.product__name .detail2 {
+    color: gray;
+    margin: 3px;
+    font-size: .7em;
+}
+
+.ordered__product :is(.product__price, .product__calculation) {
+    flex: 1;
+}
+
+.product__calculation {
+    font-weight: 500;
+}
+.product__price {
+    font-weight: 700;
+}
+
+.order__status__container h3 {
+    padding: 10px 20px;
+    color: rgb(50,63,75);
+    text-align: center;
+    border-bottom: solid 1px lightgray;
+}
+
+.order__status {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.order__status > i {
+    padding: 15px;
+    max-width: 18px;
+    max-height: 20px;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border:solid 1px rgb(150,182,255);
+    color: rgb(150,182,255);
+    margin: 10px;
+}
+
+.order__status__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.order__status__info span > i {
+    color: rgb(187, 187, 187);
+}
+
+.order__status__info span > .complete {
+    color: rgb(68,215,123);
+}
+.order__status__info span {
+    margin: 3px;
+    font-weight: 600;
+}
+.order__status__info small {
+    margin: 3px;
+    color: gray;
+    font-size: .7em;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- <script src="../JS/adminDashboard.js" defer></script> -->
+
+    <link rel="stylesheet" href="../styles/orderDetails.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">    
+    <title>Document</title>
+</head>
+<body>
+    <main class="main adminMain">
+        <nav class="side__nav__wrapper ">
+
+            <section class="side__nav__container close">
+            <div class="title">
+                <h1 class="elements"> <i class="fa-solid fa-user-shield"></i> Andro Eugenio</h1>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+
+            <a href="adminDashboard.html" class="elements" >
+                <i class="fa-solid fa-chart-line"></i> &nbsp; Dashboard
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-calendar-days"></i> &nbsp; Appointment
+            </a>
+
+            <a class="elements activePage" href="#">
+                <i class="fa-solid fa-truck-fast"></i> &nbsp; To-Ship
+            </a>
+            <a class="elements">
+                <i class="fa-solid fa-cart-flatbed"></i> &nbsp; Inventory
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout
+            </a>
+            </section>
+            
+        </nav>
+
+        <section class="order__number">
+            <h3>Order <span>#45548</span></h3>
+            <small>May 9, 2022 at 01:50 PM</small>
+        </section>
+
+        <section class="order__details__container">
+
+            <div class="ordered__items__container">
+                <div class="ordered__items__header">
+                    <h3>Ordered Items <small>(All items were shipped)</small> </h3>
+                </div>
+
+
+                <div class="ordered__products">
+
+
+                    <div class="ordered__product">
+                        <img src="../assets/puppy-food2.png" alt="" class="product__image">
+                        <div class="product__name">
+                            <span class="detail1">wagg pet food</span>
+                            <small class="detail2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, numquam.</small>
+                        </div>
+                        <div class="product__calculation">₱ 610.00 X 2</div>
+                        <div class="product__price">₱ 1220.00</div>
+                    </div>
+                </div>
+
+                <div class="ordered__product">
+                    <img src="../assets/waggFoodSet.jpg" alt="" class="product__image">
+                    <div class="product__name">
+                        <span class="detail1">wagg food set</span>
+                        <small class="detail2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, numquam.</small>
+                    </div>
+                    <div class="product__calculation">₱ 1200.00 X 2</div>
+                    <div class="product__price">₱ 2400.00</div>
+                </div>
+            </div>
+
+            </div>
+
+
+
+            <div class="order__status__container">
+                <h3>Order Status</h3>
+                <div class="order__status">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <div class="order__status__info ">
+                        <span>Order Packing <i class="fa-solid fa-circle-check complete"></i></span>
+                        <small>25 may 2021</small>
+                    </div>
+                </div>
+
+                <div class="order__status">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div class="order__status__info">
+                        <span>Dispatched <i class="fa-solid fa-circle-check complete"></i></span>
+                        <small>25 may 2021</small>
+                    </div>
+                </div>
+
+                <div class="order__status">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                    <div class="order__status__info">
+                        <span>Delivered <i class="fa-solid fa-circle-check "></i></span>
+                        <!-- <small>25 may 2021</small> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
