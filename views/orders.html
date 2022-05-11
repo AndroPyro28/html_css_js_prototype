@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/orders.css">
+
+    <script src="../JS/orders.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main adminMain">
+      <nav class="side__nav__wrapper">
+        <section class="side__nav__container close">
+          <div class="title">
+            <h1 class="elements">
+              <i class="fa-solid fa-user-shield"></i> Andro Eugenio
+            </h1>
+            <i class="fa-solid fa-bars hamburger"></i>
+          </div>
+
+          <a href="adminDashboard.html" class="elements">
+            <i class="fa-solid fa-chart-line"></i> &nbsp; Dashboard
+          </a>
+
+          <a class="elements">
+            <i class="fa-solid fa-calendar-days"></i> &nbsp; Appointment
+          </a>
+
+          <a class="elements activePage" href="#">
+            <i class="fa-solid fa-truck-fast"></i> &nbsp; To-Ship
+          </a>
+          <a class="elements">
+            <i class="fa-solid fa-cart-flatbed"></i> &nbsp; Inventory
+          </a>
+
+          <a class="elements">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout
+          </a>
+        </section>
+      </nav>
+      
+
+      <section class="order__details__container">
+          <h3>Order Details</h3>
+
+          <!-- <p>
+            In the order details section, you can review and manage all orders with their details. You can view and edit many information such as IDs of all orders, ordered
+            product, order date, price and order status. Access to this area is limited. Only administrators and team leaders can reach. The changes you make will be <br>
+            approved after they are checked.
+          </p> -->
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum et eius repellendus facere officia perspiciatis praesentium sapiente. Facere fuga sunt voluptatibus saepe! Laborum nobis vitae provident sed nam saepe molestiae dolore incidunt sequi dignissimos natus ut nemo tenetur, quibusdam perferendis recusandae cum atque voluptates unde itaque ipsa aliquam ratione.</p>
+
+          <div class="order__details__list">
+
+            <div class="searchbar__wrapper">
+
+                <div class="searchbar__container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for Order ID, Customer Name">
+                </div>
+
+                <select name="" id="" class="select">
+                    <option value="">All Orders</option>
+                    <option value="">Completed</option>
+                    <option value="">Pending</option>
+                    <option value="">Cancelled</option>
+                </select>
+            </div>
+
+
+            <section class="table__container">
+
+                <div class="table__row header">
+                    <div class="table__head"> Order ID </div>
+                    <div class="table__head"> Customer </div>
+                    <div class="table__head"> Order </div>
+                    <div class="table__head"> Delivery Date </div>
+                    <div class="table__head"> Delivery Price </div>
+                    <div class="table__head"> Delivery Status </div>
+                    <div class="table__head"> Payment </div>
+                </div>
+
+
+                <div class="table__row data" data-status="completed">
+                    <div class="table__data"> 45548 </div>
+                    <div class="table__data"> Andro Eugenio </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/21/22 </div>
+                    <div class="table__data price"> ₱ 5512.00 </div>
+                    <div class="table__data status status__complete"> Complete </div>
+                    <div class="table__data"> Gcash Payment </div>
+                </div>
+
+                <div class="table__row data" data-status="cancelled">
+                    <div class="table__data"> 41542 </div>
+                    <div class="table__data"> mikey Scott </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1212.00 </div>
+                    <div class="table__data status status__cancelled"> Cancelled </div>
+                    <div class="table__data"> Credit Card </div>
+                </div>
+
+                <div class="table__row data" data-status="continue">
+                    <div class="table__data"> 41548 </div>
+                    <div class="table__data"> John Doe </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 15312.00 </div>
+                    <div class="table__data status status__continue"> Continue </div>
+                    <div class="table__data"> Gcash Payment </div>
+                </div>
+
+                <div class="table__row data" data-status="pending">
+                    <div class="table__data"> 453548 </div>
+                    <div class="table__data"> Jean Correa </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1512.00 </div>
+                    <div class="table__data status status__pending"> Pending </div>
+                    <div class="table__data"> Credit Card </div>
+                </div>
+
+                <div class="table__row data" data-status="completed">
+                    <div class="table__data"> 45548 </div>
+                    <div class="table__data"> Andro Eugenio </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/21/22 </div>
+                    <div class="table__data price"> ₱ 5512.00 </div>
+                    <div class="table__data status status__complete"> Complete </div>
+                    <div class="table__data"> Gcash Payment </div>
+                </div>
+
+                <div class="table__row data" data-status="cancelled">
+                    <div class="table__data"> 41542 </div>
+                    <div class="table__data"> mikey Scott </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1212.00 </div>
+                    <div class="table__data status status__cancelled"> Cancelled </div>
+                    <div class="table__data"> Cash-On Delivery </div>
+                </div>
+
+                <div class="table__row data" data-status="continue">
+                    <div class="table__data"> 41548 </div>
+                    <div class="table__data"> John Doe </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 15312.00 </div>
+                    <div class="table__data status status__continue"> Continue </div>
+                    <div class="table__data"> Gcash Payment </div>
+                </div>
+
+                <div class="table__row data" data-status="pending">
+                    <div class="table__data"> 453548 </div>
+                    <div class="table__data"> Jean Correa </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1512.00 </div>
+                    <div class="table__data status status__pending"> Pending </div>
+                    <div class="table__data"> Cash-On Delivery </div>
+                </div>
+
+                <div class="table__row data" data-status="completed">
+                    <div class="table__data"> 45548 </div>
+                    <div class="table__data"> Andro Eugenio </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/21/22 </div>
+                    <div class="table__data price"> ₱ 5512.00 </div>
+                    <div class="table__data status status__complete"> Complete </div>
+                    <div class="table__data"> Cash-On Delivery </div>
+                </div>
+
+                <div class="table__row data" data-status="cancelled">
+                    <div class="table__data"> 41542 </div>
+                    <div class="table__data"> mikey Scott </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1212.00 </div>
+                    <div class="table__data status status__cancelled"> Cancelled </div>
+                    <div class="table__data"> Credit Card </div>
+                </div>
+
+                <div class="table__row data" data-status="continue">
+                    <div class="table__data"> 41548 </div>
+                    <div class="table__data"> John Doe </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 15312.00 </div>
+                    <div class="table__data status status__continue"> Continue </div>
+                    <div class="table__data"> Credit Card </div>
+                </div>
+
+                <div class="table__row data" data-status="pending">
+                    <div class="table__data"> 453548 </div>
+                    <div class="table__data"> Jean Correa </div>
+                    <div class="table__data"> Wagg Food set, etc </div>
+                    <div class="table__data"> 05/22/22 </div>
+                    <div class="table__data price"> ₱ 1512.00 </div>
+                    <div class="table__data status status__pending"> Pending </div>
+                    <div class="table__data"> Gcash Payment </div>
+                </div>
+                
+            </section>
+            
+            
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
