@@ -1,0 +1,65 @@
+.record__container__container,
+.appointment__information__container,
+.owner__information__container {
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px black solid; */
+    margin-bottom: 20px;
+}
+.main {
+    background: white;
+}
+
+.record__header {
+    padding: 20px 20px;
+    font-size: 2em;
+    font-weight: 600;
+    background: rgb(155, 155, 155);
+    /* background: rgb(33,47,60); */
+    color: white;
+    font-family: 'league spartan', sans-serif;
+}
+
+
+.pet__image img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.information__container {
+    display: flex;
+    justify-content: center;
+}
+
+.information__container div {
+    display: flex;
+}
+
+.pet__image {
+    flex: .5
+    
+    ;
+    display: flex;
+    justify-content: center;
+}
+.content__information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    width: 50%;
+    margin: 10px 50px;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    background: white;
+}
+
+.information strong {
+    color: rgb(83, 83, 83);
+}
+.information span  {
+    color: gray;
+}
