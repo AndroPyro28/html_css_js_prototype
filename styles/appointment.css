@@ -48,6 +48,12 @@ body {
     font-family: 'league spartan';
 }
 
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+} */
+
 .appointment__form__inputs__container h2 {
     font-size: 25px;
     text-transform: uppercase;

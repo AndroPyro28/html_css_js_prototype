@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="../JS/petRecordList.js" defer></script>
+    <link rel="stylesheet" href="../styles/petRecordList.css">
+</head>
+<body>
+    <main class="main adminMain">
+        <nav class="side__nav__wrapper ">
+
+            <section class="side__nav__container close">
+            <div class="title">
+                <h1 class="elements"> <i class="fa-solid fa-user-shield"></i> Andro Eugenio</h1>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+
+            <a class="elements " href="adminDashboard.html" >
+                <i class="fa-solid fa-chart-line"></i> &nbsp; Dashboard
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-calendar-days"></i> &nbsp; Appointment
+            </a>
+
+            <a class="elements" href="orders.html">
+                <i class="fa-solid fa-truck-fast"></i> &nbsp; To-Ship
+            </a>
+
+            <a class="elements activePage" href="petRecordList.html">
+                <i class="fa-solid fa-clock-rotate-left"></i> &nbsp; Records
+            </a>
+            <a class="elements">
+                <i class="fa-solid fa-cart-flatbed"></i> &nbsp; Inventory
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout
+            </a>
+            </section>
+            
+        </nav>
+
+        <section class="pet__record__list__container">
+            <section class="background__header">
+                <h3>Record List</h3>
+            <div class="pet__record__filter">
+
+                <div class="search__record__container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search (e.g Owner Name, Pet Name, Pet Breed...)">
+                </div>
+
+                <div class="pagination__record__container">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <section class="row__table table__header ">
+                <div class="header col__checkbox"> <input type="checkbox" name="" id="" class="checkbox__header"> </div>
+                <div class="header col__owner__name"> Owner Name</div>
+                <div class="header col__pet__name"> Pet Name</div>
+                <div class="header col__pet__breed"> Pet Breed</div>
+                <div class="header col__appointment"> Appointment</div>
+                <div class="header col__date"> Date</div>
+                <div class="header col__time__starts"> Time Starts</div>
+                <div class="header col__time__ends"> Time ends</div>
+                <div class="header col__action"> Action</div>
+            </section>
+        </section>
+
+            <section class="record__list__container">
+
+                
+
+                <section class="row__table table__data ">
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> Andro Eugenio</div>
+                    <div class="data col__pet__name"> Pinti Davinti</div>
+                    <div class="data col__pet__breed"> Aspen</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/12/22</div>
+                    <div class="data col__time__starts"> 02:00 pm</div>
+                    <div class="data col__time__ends"> 05:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                    <div class="actions">
+                        <span class="action__button">Archived Record</span>
+                        <span class="action__button">Delete Record</span>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="row__table table__data ">
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> John Doe</div>
+                    <div class="data col__pet__name"> Brutos spen</div>
+                    <div class="data col__pet__breed"> German sheppered</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/11/22</div>
+                    <div class="data col__time__starts"> 01:00 pm</div>
+                    <div class="data col__time__ends"> 04:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                        <div class="actions">
+                            <span class="action__button">Archived Record</span>
+                            <span class="action__button">Delete Record</span>
+                        </div>
+                        </div>
+                </section>
+
+                <section class="row__table table__data ">
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> Jean Correa</div>
+                    <div class="data col__pet__name"> Dixie Davinti</div>
+                    <div class="data col__pet__breed"> Golden Retriever</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/13/22</div>
+                    <div class="data col__time__starts"> 03:00 pm</div>
+                    <div class="data col__time__ends"> 06:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                        <div class="actions">
+                            <span class="action__button">Archived Record</span>
+                            <span class="action__button">Delete Record</span>
+                        </div>
+                        </div>
+                </section>
+
+                <section class="row__table table__data ">
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> Fred Corner</div>
+                    <div class="data col__pet__name"> Mike Damson</div>
+                    <div class="data col__pet__breed"> Husky</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/13/22</div>
+                    <div class="data col__time__starts"> 03:00 pm</div>
+                    <div class="data col__time__ends"> 06:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                        <div class="actions">
+                            <span class="action__button">Archived Record</span>
+                            <span class="action__button">Delete Record</span>
+                        </div>
+                        </div>
+                </section>
+                
+                <section class="row__table table__data ">
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> Reign McGreg</div>
+                    <div class="data col__pet__name"> Betty</div>
+                    <div class="data col__pet__breed"> Persian Cat</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/13/22</div>
+                    <div class="data col__time__starts"> 03:00 pm</div>
+                    <div class="data col__time__ends"> 06:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                        <div class="actions">
+                            <span class="action__button">Archived Record</span>
+                            <span class="action__button">Delete Record</span>
+                        </div>
+                        </div>
+                </section>
+
+
+                <section class="row__table table__data ">
+                    
+                    <div class="data col__checkbox"> <input type="checkbox" name="" id="" class="checkbox"> </div>
+                    <div class="data col__owner__name"> Reign McGreg</div>
+                    <div class="data col__pet__name"> Betty</div>
+                    <div class="data col__pet__breed"> Persian Cat</div>
+                    <div class="data col__appointment"> Grooming</div>
+                    <div class="data col__date"> 05/13/22</div>
+                    <div class="data col__time__starts"> 03:00 pm</div>
+                    <div class="data col__time__ends"> 06:00 pm</div>
+                    <div class="data col__action"> <i class="fa-solid fa-ellipsis-vertical actionBtn"></i>
+                        <div class="actions">
+                            <span class="action__button">Archived Record</span>
+                            <span class="action__button">Delete Record</span>
+                        </div>
+                        </div>
+                </section>
+
+            </section>
+
+        </section>
+    </main>
+</body>
+</html>

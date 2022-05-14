@@ -1,0 +1,203 @@
+.pet__record__list__container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.search__record__container {
+    margin: 50px 10px 10px 20px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    border: solid 1px white;
+    background: white;
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+
+.pagination__record__container {
+    margin: 50px 10px 10px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination__record__container span {
+    margin: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.pagination__record__container span:hover {
+    color: white;
+    background: rgb(35, 51, 66);
+}
+
+.pagination__record__container span.active {
+    color: white;
+    background: rgb(127, 171, 189);;
+}
+
+.pagination__record__container i {
+    margin: 10px;
+    cursor: pointer;
+}
+.pagination__record__container i:hover {
+    color: rgb(59, 85, 100);
+}
+
+.pet__record__filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__record__container i {
+    color: gray;
+}
+
+.search__record__container input{
+    outline: none;
+    border: none;
+    color: gray;
+    background: transparent;
+    width: 20rem;
+    height: 100%;
+    margin: 5px;
+}
+
+.record__list__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row__table {
+    display: flex;
+}
+
+.row__table :is(
+    .col__owner__name,
+    .col__pet__name,
+) {
+    flex:3;
+}
+
+.row__table :is(
+    .col__appointment,
+    .col__date,
+    .col__time__starts,
+    .col__time__ends,
+    .col__action,
+    .col__pet__breed,
+) {
+    flex: 2;
+}
+.row__table .col__action {
+    text-align: center;
+}
+
+
+.table__data .col__action i {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px 15px;
+
+}
+
+
+.table__data{
+    cursor: pointer;
+}
+
+.table__data:hover{
+    background: #f7f7f7;
+}
+
+.table__data .col__action i:hover {
+    background: #EAEAEA !important;
+    color: rgb(45, 124, 173) !important;
+
+
+}
+
+.row__table :is(
+    .col__checkbox, 
+) {
+    flex: 1;
+}
+
+.row__table > .header {
+    color: white;
+    font-size: 1.1em;
+}
+
+.row__table  div {
+    padding: 10px 15px;
+}
+
+
+.background__header {
+    background: rgb(168, 168, 168);
+    background: rgb(35, 51, 66);
+    /* background: rgb(127, 171, 189); */
+}
+
+.background__header h3 {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.table__data {
+    height: 70px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.col__action > .actions{
+    position: absolute;
+    z-index: 1;
+    background: aliceblue;
+    flex-direction: column;
+    right: 10px;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    /* display: flex; */
+
+}
+
+.col__action > .actions.active{
+    display: flex;
+}
+
+.actions .action__button {
+    width: 150px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.actions .action__button:hover {
+    background: gray;
+    color: white;
+}
+
+.table__data:nth-child(even) {
+    background: #f7f7f7;
+}
+.row__table > .data {
+    color: rgb(78, 78, 78) !important;
+    font-size: 0.9em !important;
+    overflow: hidden;
+    width: fit-content;
+}
