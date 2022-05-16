@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    
+
     <link rel="stylesheet" href="../styles/appointment.css" />
 
     <script src="../JS/index.js" defer></script>
@@ -35,7 +35,7 @@
 
           <div class="info__and__cart">
             <div class="userProfile__container">
-              <button>
+              <button class="cartSectionBtn">
                 <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart &nbsp;
                 <span class="cart__number__item">5</span>
               </button>
@@ -49,14 +49,16 @@
           <a href="home.html">Home</a>
           <a href="store.html">Store</a>
           <a href="liveStreamChannels.html">Live Streams</a>
-          <a href="#" class="active" >Appointment</a>
+          <a href="#" class="active">Appointment</a>
         </section>
       </nav>
 
       <section class="appointment__form__container">
         <section class="appointment__form__photo"></section>
         <section class="appointment__form__inputs__container">
-          <h2>B o o k &nbsp; A n &nbsp; A p p o i n t m e n t &nbsp; O n l i n e!</h2>
+          <h2>
+            B o o k &nbsp; A n &nbsp; A p p o i n t m e n t &nbsp; O n l i n e!
+          </h2>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -65,62 +67,81 @@
           </p>
 
           <div class="form__inputs__container">
-
-              <div class="input__container">
-                  <label for="petName">Pet Name</label>
-                  <input type="text" name="" id="petName" class="input" placeholder="name of your pet">
+            <div class="input__container">
+              <label for="petName">Pet Name</label>
+              <input
+                type="text"
+                name=""
+                id="petName"
+                class="input"
+                placeholder="name of your pet"
+              />
             </div>
 
-              <div class="input__container">
-                  <label for="gender">Pet Type</label>
-                  <select name="" id="gender" class="input">
-                      <option value="" >Select</option>
-                      <option value="">Dog</option>
-                      <option value="">Cat</option>
-                  </select>
-                </div>
+            <div class="input__container">
+              <label for="gender">Pet Type</label>
+              <select name="" id="gender" class="input">
+                <option value="">Select</option>
+                <option value="">Dog</option>
+                <option value="">Cat</option>
+              </select>
+            </div>
           </div>
 
           <div class="form__inputs__container">
+            <div class="input__container">
+              <label for="birthdate">Birthdate</label>
+              <input
+                type="date"
+                name=""
+                id="birthdate"
+                class="input"
+                placeholder=""
+              />
+            </div>
 
             <div class="input__container">
-                <label for="birthdate">Birthdate</label>
-                <input type="date" name="" id="birthdate" class="input" placeholder="">
+              <label for="petType">Gender</label>
+              <select name="" id="petType" class="input">
+                <option value="">Select Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+            </div>
           </div>
-
-            <div class="input__container">
-                <label for="petType">Gender</label>
-                <select name="" id="petType" class="input">
-                    <option value="">Select Gender</option>
-                    <option value="">Male</option>
-                    <option value="">Female</option>
-                </select>
-              </div>
-        </div>
 
           <div class="form__inputs__container">
+            <div class="input__container">
+              <label for="petBreed">Pet Breed</label>
+              <input
+                type="text"
+                id="petBreed"
+                class="input"
+                placeholder="Breed of your pet"
+              />
+            </div>
 
             <div class="input__container">
-                <label for="petBreed">Pet Breed</label>
-                <input type="text" id="petBreed" class="input" placeholder="Breed of your pet">
+              <label for="requestType">Request type</label>
+              <select name="" id="requestType" class="input">
+                <option value="">Select Type</option>
+                <option value="">Grooming</option>
+                <option value="">Walk-n consulting</option>
+              </select>
+            </div>
           </div>
-
-            <div class="input__container">
-                <label for="requestType">Request type</label>
-                <select name="" id="requestType" class="input">
-                    <option value="">Select Type</option>
-                    <option value="">Grooming</option>
-                    <option value="">Walk-n consulting</option>
-                </select>
-              </div>
-        </div>
 
           <div class="form__inputs__container">
-
             <div class="input__container">
-                <label for="preferedDate">Prefered Date And Time</label>
-                <input type="datetime-local" name="" id="preferedDate" class="input" placeholder="Your Prefered Date...">
-          </div>
+              <label for="preferedDate">Prefered Date And Time</label>
+              <input
+                type="datetime-local"
+                name=""
+                id="preferedDate"
+                class="input"
+                placeholder="Your Prefered Date..."
+              />
+            </div>
 
             <!-- <div class="input__container">
                 <label for="preferedTime">Prefered Time</label>
@@ -134,20 +155,25 @@
                     <option value="">06:00 pm</option>
                 </select>
               </div> -->
-        </div>
+          </div>
 
-        <div class="form__inputs__container">
+          <div class="form__inputs__container">
+            <div class="input__container">
+              <label for="additionalRequest">Additional Request</label>
+              <textarea
+                name=""
+                id="additionalRequest"
+                class="messageRequest input"
+                placeholder="Your additional message..."
+              ></textarea>
+            </div>
+          </div>
 
-        <div class="input__container">
-            <label for="additionalRequest">Additional Request</label>
-            <textarea name="" id="additionalRequest" class="messageRequest input" placeholder="Your additional message..."></textarea>
-        </div>
-        </div>
-
-        <div class="form__inputs__container">
-            <div class="button">Submit <i class="fa-solid fa-envelope-circle-check"></i></div>
-        </div>
-
+          <div class="form__inputs__container">
+            <div class="button">
+              Submit <i class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+          </div>
         </section>
       </section>
     </main>

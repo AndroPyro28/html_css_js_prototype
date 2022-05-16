@@ -132,7 +132,7 @@
 .products__container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 350px;
+    grid-auto-rows: auto;
     grid-gap: 20px;
     position: relative;
     padding: 20px;
@@ -168,6 +168,12 @@
     margin: 5px;
 }
 
+.product__item__desc {
+    color: gray;
+    font-size: 0.9em;
+    
+}
+
 .add__to__cart {
     border-radius: 10px;
     border: solid 1px black;
@@ -175,14 +181,20 @@
     color: black;
     padding: 5px 10px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.add__to__cart:hover {
 
-    /* border-color: white; */
-    background: black;
+.add__to__cart:hover {
+    background: gray;
     color: white;
+}
+
+.add__to__cart:active {
+    /* transform: ; */
+    transition: all .0s ease-in-out;
+
+    background: black !important;
 }
 
 .left, .right {

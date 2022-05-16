@@ -1,5 +1,6 @@
 body {
     background: rgb(230,233,234);
+    overflow-x: hidden;
 }
 
 .main {
@@ -79,6 +80,21 @@ body {
     -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
 }
+.product__list__container h2{
+    margin: 50px;
+    color: gray;
+}
+
+.checkbox {
+    flex: 1;
+    align-self: center;
+    height: 15px;
+    width: 15px;
+    /* border: solid 1px gray; */
+}
+
+/* coloring checkbox */
+
 
 .product__item__container {
     display: flex;
@@ -100,6 +116,7 @@ body {
     flex-direction: column;
     padding: 10px;
     flex: 2;
+    overflow: hidden;
 }
 
 .product__name h5 {
@@ -287,7 +304,7 @@ body {
     font-weight: 900;
     display: flex;
     justify-content: space-between;
-    margin: 5px;
+    margin: 5px !important;
     cursor: pointer;
     transition: all .3s ease-in;
 }

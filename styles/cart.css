@@ -1,0 +1,107 @@
+
+.customer__cart__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+.customer__cart__wrapper h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.customer__cart__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cart__table {
+    display: flex;
+}
+
+.cart__table :is(.header__description, .data__description) {
+    flex: 3;
+}
+
+.data {
+    margin: 10px 0;
+}
+.data__description {
+    display: flex;
+    justify-content: space-between;
+    /* background: bla; */
+}
+.data__description .product__img {
+    width: 100px;
+    object-fit: contain;
+}
+.product__info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.product__info h3 {
+    color: rgb(102, 128, 129);
+    font-size: 0.9em;
+}
+
+.product__info p {
+    font-size: 0.8em;
+    width: 80%;
+    color: gray;
+    margin-top: 10px;
+}
+.data__quantity button{
+    padding: 3px 5px;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #EAEAEA;
+    margin: 0 5px;
+}
+
+
+.header {
+    font-weight: 600;
+    color: rgb(70, 69, 69);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cart__table .data__checkbox {
+    /* align-items: center; */
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.header__checkbox input, .data__checkbox input {
+    width: 100%;
+    margin: auto;
+}
+
+.data__checkbox input {
+    margin-top: 50px;
+}
+
+.cart__table div {
+    flex:1;
+}
+
+.data__delete {
+    font-size: 1.1em;
+    color: rgb(146, 146, 146);
+}
+
+.data__delete i {
+    cursor: pointer;
+    padding: 5px;
+}
+.data__delete i:hover {
+    color: black;
+}
