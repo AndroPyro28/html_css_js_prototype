@@ -51,7 +51,10 @@
 
 .appointment__header h3 {
     margin: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
     /* font-family: 'league spartan', sans-serif;
     text-transform: uppercase; */
 }
@@ -64,6 +67,10 @@
     border: none;
     margin-right: 50px;
     height: auto;
+}
+
+.header__table > div {
+    font-family:  'Open sans', sans-serif !important;
 }
 
 .appointment__data {

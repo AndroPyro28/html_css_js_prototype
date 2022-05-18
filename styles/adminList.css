@@ -1,0 +1,181 @@
+body {
+    background: rgb(235, 235, 235);
+    font-family: "Open Sans", sans-serif !important;
+
+}
+
+.admin__list__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin__list__wrapper h1 {
+    margin: 40px 50px 30px 50px;
+    /* font-weight: 400; */
+}
+
+.list__navigation__button {
+    margin: 0px 20px 50px 50px;
+}
+
+.list__navigation__button a {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: rgb(75, 74, 74);
+    transition: all .3s ease-in-out;
+    border-bottom: solid 2px rgb(235, 235, 235);
+
+}
+
+.list__navigation__button a.active {
+    border-bottom: solid 2px rgb(99, 98, 98);
+}
+
+.list__navigation__button a:hover {
+    border-bottom: solid 2px rgb(99, 98, 98);
+
+}
+
+.shift__schedule__container {
+    display: flex;
+}
+
+.pagination {
+    margin: auto;
+    margin-top: -50px;
+    /* margin-bottom: 5px; */
+    
+}
+
+.pagination i {
+    padding: 10px;
+    background: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.shift__schedule__container > div {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    color: gray;
+    background: gray;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.shift__schedule__container > div.active {
+    background: white;
+    color: gray;
+}
+
+/* .shift__schedule__container > div:hover {
+    background: white;
+    color: gray;
+} */
+
+.table__row {
+    display: flex;
+    /* justify-content: space-evenly; */
+
+}
+
+.table__row > div {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__header {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgb(3, 3, 3);
+    padding: 55px 40px 25px 40px;
+    background: white;
+}
+
+.table__header .header {
+    font-family: 'Open Sans', sans-serif;
+}
+.table__data {
+    /* padding: 10px 40px 20px 40px; */
+    padding: 15px 40px 15px 40px;
+    color: rgb(19, 18, 18);
+    height: 30px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.table__data:hover {
+    background: #f1f1f1;
+
+}
+
+.table__data:nth-child(even) {
+    background: #f1f1f1;
+}
+
+/* .table__row:nth-child(even):hover{
+    background: white !important;  
+} */
+
+
+
+.table__customer img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.admin__list__container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 450px;
+    margin-bottom: 50px;
+    padding: 0px 0px;
+    overflow: auto;
+}
+.table__status > span {
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.onGoing {
+    background: rgb(255,207,67);
+    color: white;
+}
+
+.complete {
+    background: rgb(52,168,83);
+    color: white;
+}
+
+.pending {
+    background: rgb(187, 187, 187);
+    color: white;
+}
+
+.table__action {
+    flex: 0.5 !important;
+}
+.table__action i {
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.table__action i:hover{
+    background: #EAEAEA;  
+}
+.table__row:nth-child(even) .table__action i:hover{
+    background: white !important;  
+}
