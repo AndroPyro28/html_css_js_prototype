@@ -19,3 +19,8 @@ window.addEventListener('load', (event) => {
 });
 
 
+const userProfile = document.querySelector('.userProfile');
+
+userProfile.addEventListener('click', () => {
+    window.location.assign('/views/customerProfile-personalInfo.html')
+})

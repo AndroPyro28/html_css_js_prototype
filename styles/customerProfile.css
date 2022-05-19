@@ -1,0 +1,154 @@
+.customer__profile__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden !important;
+
+
+}
+
+body {
+    background: rgb(235,236,240);
+}
+
+.customerMain {
+    overflow-x: hidden !important;
+
+    margin-top: 120px;
+}
+
+.profile__avatar {
+    display: flex;
+    margin: 30px 50px;
+}
+
+.profile__avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+.user__info h2{
+    margin: 20px 90px;
+    text-transform: uppercase;
+}
+
+.profile__avatar span {
+    font-size: 1.5em;
+    margin: 10px;
+    font-family: "Open Sans", sans-serif !important;
+
+}
+
+.list__navigation__button {
+    margin: 0px 20px 30px 150px;
+}
+
+.list__navigation__button a {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: rgb(75, 74, 74);
+    transition: all .3s ease-in-out;
+    border-bottom: solid 2px rgb(235, 235, 235);
+
+}
+
+.list__navigation__button a.active {
+    border-bottom: solid 2px rgb(99, 98, 98);
+}
+
+.list__navigation__button a:hover {
+    border-bottom: solid 2px rgb(99, 98, 98);
+
+}
+
+
+
+.user__info {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background: white;
+    padding: 40px 50px;
+}
+
+.user__activities{
+    display: none;
+}
+
+.user__info.active {
+    display: flex;
+}
+
+.row__info {
+    display: flex;
+    width: 60%;
+    margin: 15px 90px;
+}
+
+.completed-orders .row__info{
+    width: 90%;
+}
+
+
+.row__info .activity {
+    display: flex;
+    flex: 1;    
+    font-size: 0.9em;
+    align-items: center;
+}
+
+.row__info .activity .status {
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.row__info .activity .status-complete {
+    background-color: rgb(66,133,244);
+
+}
+
+.row__info .activity .status-cancelled {
+    background-color: rgb(234,67,53);
+}
+.row__info .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cancelled-transaction {
+    color: gray;
+    text-decoration: line-through !important;
+}
+
+.info h3 {
+    /* font-family: "Open Sans", sans-serif; */
+    margin: 5px 0px;
+}
+.info > span {
+    font-size: 0.9em;
+
+}
+
+.pagination {
+    margin: 50px auto 0px auto;
+    font-size: 1.1em;
+}
+
+.pagination i{
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.pagination i:hover{
+
+    background: #EAEAEA;
+ }

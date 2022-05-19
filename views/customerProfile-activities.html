@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/global.js" defer></script>
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <script src="../JS/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/customerProfile.css">
+    <script src="../JS/customer-profile.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main customerMain">
+        <nav class="authNav" >
+            <section class="top__navbar" >
+
+                <div class="brand__logo">
+                    <img src="../assets/logo.png" class="logo" />
+                </div>
+
+                <div class="search__bar__container">
+                    <input type="text" placeholder="search..." class="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search</button>
+                </div>
+
+                <div class="info__and__cart"> 
+
+                    <div class="userProfile__container">
+                        <button class="cartSectionBtn"> <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart &nbsp; <span class="cart__number__item">5</span></button>
+                        <img src="../assets/nicePicture.jpg" alt="" class="userProfile">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bot__navbar">
+                <a href="home.html">Home</a>
+                <a href="store.html">Store</a>
+                <a href="liveStreamChannels.html">Live Streams</a>
+                <a href="appointment.html">Appointment</a>
+            </section>
+        </nav>
+
+        <section class="customer__profile__wrapper">
+
+            <div class="profile__avatar">
+                <img src="../assets/nicePicture.jpg" alt="">
+                <span>Andro Eugenio</span>
+            </div>
+
+            <div class="list__navigation__button">
+                <a href="customerProfile-personalInfo.html" >Personal Info</a>
+                <a href="#" class="active">Activities</a>
+            </div>
+
+            <section class="user__info appointment-history user__activities">
+
+                <h2>Appointment History</h2>
+
+                <div class="row__info">
+                    <div class="activity">
+                        <span class="date">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Service-Grooming</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-complete">Completed</span>
+                    </div>
+                </div>
+
+                <div class="row__info">
+                    <div class="activity">
+                        <span class="date">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Service-Grooming</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-complete">Completed</span>
+                    </div>
+                </div>
+
+                <div class="row__info">
+                    <div class="activity">
+                        <span class="date">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Service-Grooming</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-complete">Completed</span>
+                    </div>
+                </div>
+
+                <div class="pagination"> 1 <i class="fa-solid fa-chevron-right next"></i></div>
+
+            </section>
+
+            <section class="user__info completed-orders user__activities">
+
+                <h2>Completed Orders</h2>
+
+                <div class="row__info ">
+                    <div class="activity">
+                        <span class="date cancelled-transaction">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service cancelled-transaction">Quantity: 10</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service cancelled-transaction">Amount: ₱ 5000.00</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-cancelled">Cancelled</span>
+                    </div>
+                </div>
+
+                <div class="row__info">
+                    <div class="activity">
+                        <span class="date">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Quantity: 10</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Amount: ₱ 5000.00</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-complete">Completed</span>
+                    </div>
+                </div>
+
+                <div class="row__info">
+                    <div class="activity">
+                        <span class="date">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Quantity: 5</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service">Amount: ₱ 3000.00</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-complete">Completed</span>
+                    </div>
+                </div>
+
+                <div class="row__info ">
+                    <div class="activity">
+                        <span class="date cancelled-transaction">12 May 2022 9:00AM</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service cancelled-transaction">Quantity: 10</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="service cancelled-transaction">Amount: ₱ 5000.00</span>
+                    </div>
+
+                    <div class="activity">
+                        <span class="status status-cancelled">Cancelled</span>
+                    </div>
+                </div>
+
+                <div class="pagination"> <i class="fa-solid fa-chevron-left prev"></i> 2</div>
+
+            </section>
+        </section>
+
+    </main>
+</body>
+</html>
