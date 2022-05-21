@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="../styles/inventory.css">
+    <script src="../JS/inventory.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main adminMain">
+        <nav class="side__nav__wrapper ">
+
+            <section class="side__nav__container close">
+            <div class="title">
+                <h1 class="elements"> <i class="fa-solid fa-user-shield"></i> Andro Eugenio</h1>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+
+            <a class="elements " href="adminDashboard.html" >
+                <i class="fa-solid fa-chart-line"></i> &nbsp; Dashboard
+            </a>
+
+            <a class="elements" href="appointmentList.html">
+                <i class="fa-solid fa-calendar-days"></i> &nbsp; Appointment
+            </a>
+
+            <a class="elements" href="orders.html">
+                <i class="fa-solid fa-truck-fast"></i> &nbsp; To-Ship
+            </a>
+
+            <a class="elements " href="petRecordList.html">
+                <i class="fa-solid fa-clock-rotate-left"></i> &nbsp; Records
+            </a>
+            <a class="elements activePage" href="#">
+                <i class="fa-solid fa-cart-flatbed"></i> &nbsp; Inventory
+            </a>
+
+            <a class="elements">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Logout
+            </a>
+            </section>
+        </nav>
+
+        <section class="admin__inventory__wrapper">
+
+            <div class="invetory__left__content">
+
+                <h1>Search for items</h1>
+
+                <small>Name of item or category</small>
+
+                <div class="search__item__container">
+                    <input type="text" placeholder="Search items...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="product__statistic__container">
+
+                    <div class="product__info">
+                        <div class="product__label">
+                            <center>
+                                <label for="">Purchased</label>
+                                <h3>1339</h3>
+                            </center>
+                        </div>
+
+                        <div class="product__label">
+                            <center>
+                                <label for="">Available Stock</label>
+                                <h3>1028</h3>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="product__statistic">
+                        <canvas id="productChart" height="300px" ></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="invetory__right__content">
+
+                <div class="filter__items__container">
+
+                    <div class="filter__container">
+                        <span>Category</span>
+                        <select name="" id="">
+                            <option value="">Dog</option>
+                            <option value="">Cat</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__container">
+                        <span>Age</span>
+                        <select name="" id="">
+                            <option value="">2-4</option>
+                            <option value="">5-8</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__container">
+                        <span>Item Category</span>
+                        <select name="" id="">
+                            <option value="">Food</option>
+                            <option value="">Toy</option>
+                            <option value="">Hygiene kit</option>
+                        </select>
+                    </div>
+                    
+                    <button>Add Item <i class="fa-solid fa-plus"></i></button>
+
+                    <div class="pagination">
+                        <i class="fa-solid fa-chevron-left left "></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-chevron-right right "></i>
+                    </div>
+                </div>
+
+                <div class="table__row table__header">
+                    <div class=" header table__image"></div>
+                    <div class=" header table__productName">Name</div>
+                    <div class=" header table__petType">Pet type</div>
+                    <div class=" header table__productCategory">Category</div>
+                    <div class=" header table__productAge">Age</div>
+                    <div class=" header table__productPrice">Price</div>
+                    <div class=" header table__productStock">Stock</div>
+                    <div class=" header table__action"></div>
+                </div>
+
+                <div class="product__list__container">
+                    <!-- product -->
+                
+
+                <div class="product__item">
+
+                    <div class="table__row table__data">
+                        <div class=" data table__image">  
+                            <img src="../assets/waggFoodSet.jpg" alt="">
+                        </div>
+                        
+                        <div class=" data table__productName">waggFood Set</div>
+                        <div class=" data table__petType">Dog</div>
+                        <div class=" data table__productCategory">Food</div>
+                        <div class=" data table__productAge">3 - 5 </div>
+                        <div class=" data table__productPrice">1200.00</div>
+                        <div class=" data table__productStock">55</div>
+                        <div class=" data table__action"><i class="fa-solid fa-chevron-down openItemInfo"></i></div>
+                    </div>
+                    <!-- product info -->
+
+                    <div class="product__item__container ">
+                        <div class="image__container">
+                            <img src="../assets/waggFoodSet.jpg" alt="" class="item__image">
+                            <button>Delete</button>
+                        </div>
+                        <div class="item__info__container">
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Name</label>
+                                    <input type="text" value="wagFood Set">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Price</label>
+                                    <input type="text" value="1200.00">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Age</label>
+                                    <input type="text" value="2 - 3">
+                                </div>
+                            </div>
+
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Stock</label>
+                                    <input type="text" value="55">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Category</label>
+                                    <select name="" id="">
+                                        <option value="">Food</option>
+                                        <option value="">Toy</option>
+                                        <option value="">Hygiene Kit</option>
+                                    </select>
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Pet Type</label>
+                                    <select name="" id="">
+                                        <option value="">Dog</option>
+                                        <option value="">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="table__row table__data">
+                        <div class=" data table__image">  
+                            <img src="../assets/waggFoodSet.jpg" alt="">
+                        </div>
+                        
+                        <div class=" data table__productName">waggFood Set</div>
+                        <div class=" data table__petType">Dog</div>
+                        <div class=" data table__productCategory">Food</div>
+                        <div class=" data table__productAge">3 - 5 </div>
+                        <div class=" data table__productPrice">1200.00</div>
+                        <div class=" data table__productStock">55</div>
+                        <div class=" data table__action"><i class="fa-solid fa-chevron-down openItemInfo"></i></div>
+                    </div>
+                    <!-- product info -->
+
+                    <div class="product__item__container ">
+                        <div class="image__container">
+                            <img src="../assets/waggFoodSet.jpg" alt="" class="item__image">
+                            <button>Delete</button>
+                        </div>
+                        <div class="item__info__container">
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Name</label>
+                                    <input type="text" value="wagFood Set">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Price</label>
+                                    <input type="text" value="1200.00">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Age</label>
+                                    <input type="text" value="2 - 3">
+                                </div>
+                            </div>
+
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Stock</label>
+                                    <input type="text" value="55">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Category</label>
+                                    <select name="" id="">
+                                        <option value="">Food</option>
+                                        <option value="">Toy</option>
+                                        <option value="">Hygiene Kit</option>
+                                    </select>
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Pet Type</label>
+                                    <select name="" id="">
+                                        <option value="">Dog</option>
+                                        <option value="">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="table__row table__data">
+                        <div class=" data table__image">  
+                            <img src="../assets/waggFoodSet.jpg" alt="">
+                        </div>
+                        
+                        <div class=" data table__productName">waggFood Set</div>
+                        <div class=" data table__petType">Dog</div>
+                        <div class=" data table__productCategory">Food</div>
+                        <div class=" data table__productAge">3 - 5 </div>
+                        <div class=" data table__productPrice">1200.00</div>
+                        <div class=" data table__productStock">55</div>
+                        <div class=" data table__action"><i class="fa-solid fa-chevron-down openItemInfo"></i></div>
+                    </div>
+                    <!-- product info -->
+
+                    <div class="product__item__container ">
+                        <div class="image__container">
+                            <img src="../assets/waggFoodSet.jpg" alt="" class="item__image">
+                            <button>Delete</button>
+                        </div>
+                        <div class="item__info__container">
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Name</label>
+                                    <input type="text" value="wagFood Set">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Price</label>
+                                    <input type="text" value="1200.00">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Age</label>
+                                    <input type="text" value="2 - 3">
+                                </div>
+                            </div>
+
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Stock</label>
+                                    <input type="text" value="55">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Category</label>
+                                    <select name="" id="">
+                                        <option value="">Food</option>
+                                        <option value="">Toy</option>
+                                        <option value="">Hygiene Kit</option>
+                                    </select>
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Pet Type</label>
+                                    <select name="" id="">
+                                        <option value="">Dog</option>
+                                        <option value="">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="table__row table__data">
+                        <div class=" data table__image">  
+                            <img src="../assets/waggFoodSet.jpg" alt="">
+                        </div>
+                        
+                        <div class=" data table__productName">waggFood Set</div>
+                        <div class=" data table__petType">Dog</div>
+                        <div class=" data table__productCategory">Food</div>
+                        <div class=" data table__productAge">3 - 5 </div>
+                        <div class=" data table__productPrice">1200.00</div>
+                        <div class=" data table__productStock">55</div>
+                        <div class=" data table__action"><i class="fa-solid fa-chevron-down openItemInfo"></i></div>
+                    </div>
+                    <!-- product info -->
+
+                    <div class="product__item__container ">
+                        <div class="image__container">
+                            <img src="../assets/waggFoodSet.jpg" alt="" class="item__image">
+                            <button>Delete</button>
+                        </div>
+                        <div class="item__info__container">
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Name</label>
+                                    <input type="text" value="wagFood Set">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Price</label>
+                                    <input type="text" value="1200.00">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Age</label>
+                                    <input type="text" value="2 - 3">
+                                </div>
+                            </div>
+
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Stock</label>
+                                    <input type="text" value="55">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Category</label>
+                                    <select name="" id="">
+                                        <option value="">Food</option>
+                                        <option value="">Toy</option>
+                                        <option value="">Hygiene Kit</option>
+                                    </select>
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Pet Type</label>
+                                    <select name="" id="">
+                                        <option value="">Dog</option>
+                                        <option value="">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__item">
+
+                    <div class="table__row table__data">
+                        <div class=" data table__image">  
+                            <img src="../assets/waggFoodSet.jpg" alt="">
+                        </div>
+                        
+                        <div class=" data table__productName">waggFood Set</div>
+                        <div class=" data table__petType">Dog</div>
+                        <div class=" data table__productCategory">Food</div>
+                        <div class=" data table__productAge">3 - 5 </div>
+                        <div class=" data table__productPrice">1200.00</div>
+                        <div class=" data table__productStock">55</div>
+                        <div class=" data table__action"><i class="fa-solid fa-chevron-down openItemInfo"></i></div>
+                    </div>
+                    <!-- product info -->
+
+                    <div class="product__item__container ">
+                        <div class="image__container">
+                            <img src="../assets/waggFoodSet.jpg" alt="" class="item__image">
+                            <button>Delete</button>
+                        </div>
+                        <div class="item__info__container">
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Name</label>
+                                    <input type="text" value="wagFood Set">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Price</label>
+                                    <input type="text" value="1200.00">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Age</label>
+                                    <input type="text" value="2 - 3">
+                                </div>
+                            </div>
+
+                            <div class="info__row">
+                                <div class="info productName">
+                                    <label for="">Product Stock</label>
+                                    <input type="text" value="55">
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Product Category</label>
+                                    <select name="" id="">
+                                        <option value="">Food</option>
+                                        <option value="">Toy</option>
+                                        <option value="">Hygiene Kit</option>
+                                    </select>
+                                </div>
+
+                                <div class="info">
+                                    <label for="">Pet Type</label>
+                                    <select name="" id="">
+                                        <option value="">Dog</option>
+                                        <option value="">Cat</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
