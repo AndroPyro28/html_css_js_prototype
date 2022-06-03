@@ -24,3 +24,14 @@ const userProfile = document.querySelector('.userProfile');
 userProfile.addEventListener('click', () => {
     window.location.assign('/views/customerProfile-personalInfo.html')
 })
+
+const feedbackBackdrop = document.querySelector('.feedback__backdrop');
+const feedBackBtn = document.querySelector('.feedbackBtn');
+const closeBtn = document.querySelector('.closeBtn');
+feedBackBtn.addEventListener('click', () => {
+    feedbackBackdrop.style.display = "block"
+})
+
+closeBtn.addEventListener('click', () => {
+    feedbackBackdrop.style.display = "none"
+})
