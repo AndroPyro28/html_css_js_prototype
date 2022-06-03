@@ -140,10 +140,3 @@ body {
 }
 
 
-.input__container .prevBtn {
-    align-self: flex-start !important;
-}
-.input__container .nextBtn {
-    align-self: flex-end !important;
-}
-
