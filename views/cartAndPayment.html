@@ -317,7 +317,9 @@
 
                   <div class="card__input">
                     <label for="">CVV</label>
-                    <input type="number" min="1" class="input" placeholder="(e.g 123)" />
+                    <input type="number" min="1" class="input" max="999" placeholder="(e.g 123)" onchange="(e) => {
+                      console.log('...')
+                    }" />
                   </div>
 
                   <div class="card__input__container">
